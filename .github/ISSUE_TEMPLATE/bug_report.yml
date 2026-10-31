@@ -1,0 +1,33 @@
+name: Bug Report
+description: Report a reproducible defect or unexpected system behavior
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide detailed technical facts so the team can reproduce the behavior.
+  - type: textarea
+    id: description
+    attributes:
+      label: Defect Description
+      description: A clear and concise description of what the unexpected behavior is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps, commands, or API payloads required to trigger the issue.
+      placeholder: |
+        1. Call endpoint `...` with payload `{...}`
+        2. Observe response code `...`
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment & Runtime Details
+      description: Operating system, compiler/runtime version, and library release tag.
+    validations:
+      required: true

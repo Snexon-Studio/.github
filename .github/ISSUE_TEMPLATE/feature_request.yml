@@ -1,0 +1,23 @@
+name: Feature Request
+description: Propose an architecture improvement, endpoint, or pipeline capability
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose technical capabilities aligned with Snexon system architectures.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Technical Problem Statement
+      description: Describe the technical limitation or bottleneck being addressed.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Implementation
+      description: Technical mechanics, data models, or protocol changes proposed.
+    validations:
+      required: true
